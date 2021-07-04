@@ -15,7 +15,7 @@ const setData = () => {
 }
 useEffect(() => {
   setData();
-},[])
+})
 
 // console.log('my blogs: ', blogs)
 console.log('shakil : ', posts);
@@ -45,7 +45,7 @@ console.log('shakil : ', posts);
 // useEffect
 useEffect(() => {
   postFilter();
-},[val, postFilter])
+},[val])
 
 
 

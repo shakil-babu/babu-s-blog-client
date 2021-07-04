@@ -55,7 +55,7 @@ const Navbar = () => {
                     <nav className={darkmode ?styles.nav_main: styles.nav_main_light}>
 
                         <a className={router.pathname == "/" ? "active" : ""}>
-                            <Link href="/">১.ব্লগস()</Link>
+                            <Link   href="/">১.ব্লগস()</Link>
                         </a>
 
                         <a className={router.pathname == "/categories" ? "active" : ""}>

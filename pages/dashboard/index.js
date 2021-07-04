@@ -24,7 +24,7 @@ const Dashboard = () => {
                         {
                             data.map(item => {
                                 return (
-                                    <div className={styles.singleMsg}>
+                                    <div key={item._id} className={styles.singleMsg}>
                                         <h5>Name: {item.name}</h5>
                                         <h5>Email: {item.email}</h5>
                                         <h5>{item.dateTime}</h5>
