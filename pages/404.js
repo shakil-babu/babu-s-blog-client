@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useContext, useEffect } from 'react';
 import { darkmodeContext } from '../Components/Layout';
-import styles from '../styles/Notfound.module.css';
+import styles from '../styles/NotFound.module.css';
 const Notfound = () => {
     const [darkmode, setDarkmode] = useContext(darkmodeContext);
     const router = useRouter();
