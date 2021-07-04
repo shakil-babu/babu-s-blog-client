@@ -1,5 +1,3 @@
-import styles from '../styles/NotFound.module.css';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useContext } from 'react';
 import { darkmodeContext } from './Layout';
@@ -8,7 +6,7 @@ const Post = ({post}) => {
     const [darkmode, setDarkmode] = useContext(darkmodeContext);
     return (
         <>
-           <section className={styles.post_section}>
+           <section>
                 <main className={darkmode ? 'post_main darkBgg':'post_main lightBgg'}>
                     <div className='post_img'>
                         <img src={cover_image} alt='pic'></img>
