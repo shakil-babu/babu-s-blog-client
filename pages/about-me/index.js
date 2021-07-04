@@ -6,7 +6,7 @@ import { useContext } from 'react';
 import { darkmodeContext } from '../../Components/Layout';
 import img from '../../Components/shakil.png';
 import {FaFacebookSquare, FaGithubSquare, FaLinkedin} from 'react-icons/fa';
-const index = () => {
+const Index = () => {
     const [darkmode , setDarkmode] = useContext(darkmodeContext);
     return (
         <>
@@ -43,4 +43,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Index

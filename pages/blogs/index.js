@@ -6,7 +6,7 @@ import { useContext, useEffect, useState } from 'react';
 import Search from '../../Components/Search.js';
 import Post from '../../Components/Post.js';
 import { blogsContext } from '../../Components/Layout.js';
-const index = ({posts}) => {
+const Index = ({posts}) => {
 
 const arr = [...posts];
 const [blogs, setBlogs] = useContext(blogsContext);
@@ -79,7 +79,7 @@ useEffect(() => {
     )
 }
 
-export default index
+export default Index
 
 // getStaticProps
 export const getStaticProps = async () => {
