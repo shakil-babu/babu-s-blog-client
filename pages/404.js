@@ -11,7 +11,7 @@ const Notfound = () => {
         setTimeout(() => {
             router.push('/')
         }, 3000);
-    },[])
+    })
     return (
         <>
             <section>
