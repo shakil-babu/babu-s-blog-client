@@ -1,0 +1,142 @@
+/* =================== footer main area =========== */
+.adminForm{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: #ccd6f6;
+    border-radius: 10px;
+    padding: 15px;
+}
+.adminForm input, .adminForm button{
+    padding: 5px;
+    outline: none;
+    border: none;
+    margin-bottom: 8px;
+    border-radius: 6px;
+}
+
+.adminForm button{
+    cursor: pointer;
+    background-color: #18b490;
+    color: #fff;
+}
+
+
+.svg{
+    margin-bottom: -10px !important;
+}
+
+
+/* ================ all heading style ======== */
+.footer_babusWord{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.footer_babusWord h4{
+    font-size: 15px;
+    padding: 8px;
+    margin: 0;
+    color: #ccd6f6;
+
+}
+.footer_babusWord h6{
+    margin: 0;
+    font-size: 13px;
+    color: #ccd6f6;
+}
+.footer_babusWord a{
+    text-decoration: underline;
+    color: #ccd6f6af;
+}
+.footer_babusWord a:hover{
+    color: #18b490;
+}
+
+.footer_babusWord p{
+    font-size: 14px;
+    color: #ccd6f6af;
+    line-height: 28px;
+}
+.footer_area{
+    background-color: #112240 !important;
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+}
+
+/* ======================= footer copyright ============ */
+.footer_copyright{
+    text-align: center;
+    color: #ccd6f6 !important;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-top: 45px;
+}
+
+.footer_copyright span{
+    margin: 0;
+    text-transform: uppercase;
+    background-color: #18b490;
+    color: #000 !important;
+    padding: 5px;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+    margin-bottom: 15px;
+};
+
+
+
+.msgBoxWhole{
+    background-color: #18b490 !important;
+    border-radius: 20px;
+    padding: 50px;
+}
+.msgArea h4{
+    text-align: center;
+    color: #18b490;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.msgOutput{
+    border-radius: 20px;
+    margin-top: 80px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.singleMsg{
+    background-color: #eee;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+.singleMsg h5{
+    margin: 0;
+    padding-bottom: 8px;
+}
+/* ======================= responsive ================ */
+
+@media screen and (max-width:992px){
+    .grid_layout{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+@media screen and (max-width:768px){
+    .grid_layout{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer_copyright{
+        font-size: 12px;
+    }
+    .footer_babusWord, .social_media, .few_words{
+        text-align: center;
+    }
+}

@@ -1,0 +1,105 @@
+
+.dark_design{
+    background-color: #112240;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+.light_design{
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+.contact_main_area{
+    padding: 50px 30px;
+    margin: 60px 0;
+    
+
+}
+
+.contact_box{
+
+}
+
+
+.darkColor{
+    color: #112240;
+    margin: 0;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+.lightColor{
+    color: #ccd6f6;
+    margin: 0;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+.lightColor span{
+    color: #08b38b;
+}
+
+.darkColor span{
+    color: #08b38b;
+}
+
+
+.contact_form{
+    display: flex;
+    flex-direction: column;
+}
+.contact_form input, .contact_form textarea{
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    outline: none;
+    background-color: #ccd6f6;
+    border: none;
+}
+
+.btn{
+    padding: 12px;
+    background-color: #08b38b;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button{
+    padding: 12px;
+    background-color: #112240;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.successBox{
+    background-color: #08b38b;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    color: #fff;
+    border-radius: 6px;
+    
+}
+
+.si{
+    font-size: 25px;
+    margin-right: 8px;
+}
+.successBox h4{
+    margin: 0;
+}
+
+@media screen and (max-width: 576px){
+    .lightColor {
+        font-size: 12px;
+    }
+    .darkColor{
+        font-size: 12px;
+    }
+}

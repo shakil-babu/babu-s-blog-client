@@ -1,0 +1,104 @@
+
+/* ====================== login page style =============== */
+
+.login_area{
+    padding: 30px 0;
+}
+.login_flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 15px;
+    cursor: pointer;
+    width: 60%;
+    margin: auto;
+    border-radius: 20px;
+    opacity: 0.6;
+    border: 1px solid #112240;
+    
+}
+.login_flex:hover{
+    opacity: 100%;
+}
+.icon{
+    font-size: 20px;
+    margin-right: 10px;
+    color: #112240 !important;
+}
+.login_flex small{
+    color: #112240 !important;
+}
+
+
+
+/* ========================= comment component style =================== */
+.comment_area{
+    padding: 50px 0;
+
+}
+
+.comment_love{
+    padding-bottom: 15px;
+}
+
+.comment_form{
+ display: flex;
+ flex-direction: column;
+}
+
+.comment_form textarea, .comment_form input{
+    padding: 10px;
+}
+.comment_form textarea{
+    margin-top: 10px;   
+}
+
+.greeting_img{
+    display: flex;
+    align-items: center;
+}
+.greeting_img img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.greeting_img h5{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.comment_form button{
+    background-color: #18b490;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 992px){
+
+}
+
+
+@media screen and (max-width: 768px){
+    .login_flex{
+        width: 90%;
+    }
+    .login_area{
+        padding-top: 40px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .login_flex h4{
+        font-size: 12px;
+    }
+    .icon{
+        font-size: 16px;
+    }
+}

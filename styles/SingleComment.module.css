@@ -1,0 +1,77 @@
+
+.sc_area{
+    padding: 70px 0;
+}
+.sc_area small{
+    color: #1f2937 !important;
+}
+.sc_flex{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.sc_flex img{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+.sc_info {
+    margin-left: 10px;
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.sc_info h5, .sc_info p{
+    margin: 0;
+}
+.sc_info h5{
+    text-transform: uppercase;
+    color: #1f2937 !important;
+}
+.sc_info p{
+    color: #000 !important;
+}
+.sc_info button{
+    cursor: pointer;
+}
+
+.edbtn{
+    display: flex;
+}
+.edbtn button{
+    text-align: center;
+    outline: none;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    font-size: 11px;
+}
+.editbtn{
+    color: green;
+    margin-right: 8px;
+    border-color: green;
+}
+
+.delbtn{
+    color: red;
+    border-color: red;
+}
+
+.replyArea textarea{
+    margin-top: 10px;
+}
+.replyArea button{
+    float: right;
+    margin-top: 8px;
+}
+
+
+
+/* ===================== */
+.replies_area{
+    margin-left: 70px;
+}
+.replies_area .sc_info{
+    background-color: #e9f2ff !important;
+}
