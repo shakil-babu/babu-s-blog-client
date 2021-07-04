@@ -22,9 +22,9 @@ const index = () => {
                             <h5>জাভাস্ক্রিপ্ট এবং সি++ ভালোবাসি ।</h5>
 
                             <div className={styles.iconFlex}>
-                                <a href="https://www.facebook.com/profile.php?id=100025305922873" target="_blank"><FaFacebookSquare className={styles.icon}/> </a>
-                                <a href="https://github.com/shakil-babu" target="_blank"><FaGithubSquare className={styles.icon1}/></a>
-                                <a href="https://www.linkedin.com/in/shakil-babu-b1a144211/" target="_blank"><FaLinkedin className={styles.icon2}/></a>
+                                <a rel="noreferrer" href="https://www.facebook.com/profile.php?id=100025305922873" target="_blank"><FaFacebookSquare className={styles.icon}/> </a>
+                                <a rel="noreferrer" href="https://github.com/shakil-babu" target="_blank"><FaGithubSquare className={styles.icon1}/></a>
+                                <a rel="noreferrer" href="https://www.linkedin.com/in/shakil-babu-b1a144211/" target="_blank"><FaLinkedin className={styles.icon2}/></a>
                             </div>
                         </div>
                         <div className={styles.othersContent}>
@@ -34,7 +34,7 @@ const index = () => {
                                  JavaScript, React.js, Node.js, Express.js, Next.js এবং MongoDB । বর্তমানে একজন ছাত্র তাই এখন শেখাটাই আমার কাছে মুখ্য আর হ্যাঁ, ফিউচারে
                                 সফটওয়্যার ইঞ্জিনিয়ার হিসেবে কামলা দেওয়ার ইচ্ছা আছে বাকিটা আল্লাহর হাতে ।  </p>
 
-                                 <a href="https://shakil-babu.web.app/" target="_blank"><button>আমার পোর্টফলিও</button></a>
+                                 <a href="https://shakil-babu.web.app/" rel="noreferrer" target="_blank"><button>আমার পোর্টফলিও</button></a>
                         </div>
                     </div>
                 </section>
