@@ -7,7 +7,7 @@ import Search from '../Components/Search';
 
 import { useContext, useEffect, useState } from 'react';
 import { darkmodeContext } from '../Components/Layout';
-const index = ({posts}) => {
+const Home = ({posts}) => {
 const [darkmode, setDarkmode] = useContext(darkmodeContext)
   // state
   const [isSearch, setIsSearch] = useState(false);
@@ -69,7 +69,7 @@ const [darkmode, setDarkmode] = useContext(darkmodeContext)
   )
 }
 
-export default index ; 
+export default Home ; 
 
 
 // getStaticProps

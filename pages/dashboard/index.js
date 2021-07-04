@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from '../../styles/Footer.module.css';
 
-const index = () => {
+const Dashboard = () => {
     const [data, setData] = useState([]);
     const readMsg = () => {
         fetch('https://pristine-kenai-fjords-11934.herokuapp.com/readMessages')
@@ -41,4 +41,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Dashboard

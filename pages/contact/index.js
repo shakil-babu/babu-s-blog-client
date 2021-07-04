@@ -3,7 +3,7 @@ import { useContext, useEffect, useState } from 'react';
 import styles from '../../styles/Contact.module.css';
 import { darkmodeContext } from '../../Components/Layout';
 import {FaCheck} from 'react-icons/fa';
-const index = () => {
+const Contact = () => {
     // darkmode context
     const [darkmode, setDarkmode] = useContext(darkmodeContext);
 
@@ -117,4 +117,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Contact

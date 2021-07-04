@@ -45,7 +45,7 @@ console.log('shakil : ', posts);
 // useEffect
 useEffect(() => {
   postFilter();
-},[val])
+},[val, postFilter])
 
 
 
