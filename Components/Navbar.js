@@ -5,7 +5,6 @@ import {CgDarkMode} from 'react-icons/cg';
 import { AuthContext, darkmodeContext} from './Layout';
 
 import Link from "next/link";
-import { useRouter } from "next/router";
 
 
 
@@ -15,8 +14,6 @@ const Navbar = () => {
     const toggle = () => {
         setDarkmode(!darkmode);
     }
-
-    const router = useRouter();
 
     const [user, setUser] = useContext(AuthContext);
     const signOut = () => {
@@ -54,18 +51,18 @@ const Navbar = () => {
 
                     <nav className={darkmode ?styles.nav_main: styles.nav_main_light}>
 
-                        <a className={router.pathname == "/" ? "active" : ""}>
+                        <a>
                             <Link   href="/">১.ব্লগস()</Link>
                         </a>
 
-                        <a className={router.pathname == "/categories" ? "active" : ""}>
+                        <a>
                             <Link href="/categories">২.ক্যাটাগরিস()</Link>
                         </a>
 
-                        <a className={router.pathname == "/contact" ? "active" : ""}>
+                        <a>
                             <Link href="/contact">৩.যোগাযোগ()</Link>
                         </a>
-                        <a className={router.pathname == "/about-me" ? "active" : ""}>
+                        <a>
                             <Link href="/about-me">৪.আমার সম্পর্কে()</Link>
                         </a>
 
@@ -75,7 +72,7 @@ const Navbar = () => {
                                 if(item.email === user?.email){
                                     return (
                                         <>
-                                            <a className={router.pathname == "/dashboard" ? "active" : ""}>
+                                            <a>
                                                 <Link href="/dashboard">৫.ম্যানেজ()</Link>
                                             </a>
                                         </>
