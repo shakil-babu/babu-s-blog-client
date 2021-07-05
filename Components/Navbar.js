@@ -72,7 +72,7 @@ const Navbar = () => {
 
                         {
                             admins.map((item) => {
-                                if(item?.email === user?.email){
+                                if(item.email === user?.email){
                                     return (
                                         <>
                                             <a className={router.pathname == "/dashboard" ? "active" : ""}>

@@ -31,7 +31,7 @@ const Index = () => {
                             <h1>হ্যালো,</h1>
                             <p>আমি একজন হাবলু MERN স্টাক ডেভেলপার, আমি শিখতে এবং লিখতে ভালোবাসি। স্পেশালি, আমার ওয়েব এপ্স নিয়ে কাজ করতে ভালো লাগে এবং 
                                  একজন হাবলু হিসেবে যতোটা সম্ভব দ্রুত কোনো টেকনোলজি শেখার চেষ্টা করি। এখন পর্যন্ত হাবলু বেশ কিছু টেকনোলজি নিয়ে কাজ করেছে যেমন:
-                                 JavaScript, React.js, Node.js, Express.js, Next.js এবং MongoDB । বর্তমানে একজন ছাত্র তাই এখন শেখাটাই আমার কাছে মুখ্য </p>
+                                 JavaScript, React.js, Node.js, Express.js, Next.js এবং MongoDB । বর্তমানে একজন ছাত্র তাই এখন শেখাটাই আমার কাছে মুখ্য। </p>
 
                                  <a href="https://shakil-babu.web.app/" rel="noreferrer" target="_blank"><button>আমার পোর্টফলিও</button></a>
                         </div>
