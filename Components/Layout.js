@@ -5,7 +5,7 @@ import Navbar from "./Navbar"
 export const darkmodeContext = createContext();
 export const AuthContext = createContext();
 
-const Layout = ({children}) => {
+const Layout = (props) => {
     const [darkmode, setDarkmode] = useState(false);
     const [user, setUser] = useState(null);
 
@@ -16,7 +16,7 @@ const Layout = ({children}) => {
                 <darkmodeContext.Provider value={[darkmode, setDarkmode]}>
                     <section className={darkmode ? 'darkBg':'lightBg'}>
                     <Navbar/>
-                    {children?children:''}
+                    {props?.children}
                     <Footer/>
                     </section>
                 </darkmodeContext.Provider>
