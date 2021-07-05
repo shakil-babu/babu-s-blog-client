@@ -5,15 +5,19 @@ import {CgDarkMode} from 'react-icons/cg';
 import { AuthContext, darkmodeContext} from './Layout';
 
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 
 
 const Navbar = () => {
 
+    const [localUser, setLocalUser] = useState({});
     const [darkmode, setDarkmode] = useContext(darkmodeContext);
     const toggle = () => {
         setDarkmode(!darkmode);
     }
+
+    const router = useRouter();
 
     const [user, setUser] = useContext(AuthContext);
     const signOut = () => {
@@ -26,7 +30,7 @@ const Navbar = () => {
     const setUserinfo = () => {
         var jsonString = localStorage.getItem("loggedinUser");
         var userInfo = JSON.parse(jsonString);
-        setUser(userInfo)
+        setLocalUser(userInfo);
     }
     
 
@@ -51,28 +55,28 @@ const Navbar = () => {
 
                     <nav className={darkmode ?styles.nav_main: styles.nav_main_light}>
 
-                        <a>
+                        <a className={router.pathname == "/" ? "active" : ""}>
                             <Link   href="/">১.ব্লগস()</Link>
                         </a>
 
-                        <a>
+                        <a className={router.pathname == "/categories" ? "active" : ""}>
                             <Link href="/categories">২.ক্যাটাগরিস()</Link>
                         </a>
 
-                        <a>
+                        <a className={router.pathname == "/contact" ? "active" : ""}>
                             <Link href="/contact">৩.যোগাযোগ()</Link>
                         </a>
-                        <a>
+                        <a className={router.pathname == "/about-me" ? "active" : ""}>
                             <Link href="/about-me">৪.আমার সম্পর্কে()</Link>
                         </a>
 
 
                         {
                             admins.map((item) => {
-                                if(item.email === user?.email){
+                                if(item?.email === user?.email){
                                     return (
                                         <>
-                                            <a>
+                                            <a className={router.pathname == "/dashboard" ? "active" : ""}>
                                                 <Link href="/dashboard">৫.ম্যানেজ()</Link>
                                             </a>
                                         </>

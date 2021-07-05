@@ -14,10 +14,10 @@ const Login = () => {
      // sign in with google
    const googleSignIn = () => {
     signInWithGoogle().then((res) => {
-      
-      localStorage.setItem("loggedinUser", JSON.stringify(res));
       setUser(res);
- 
+      if(res){
+        localStorage.setItem("loggedinUser", JSON.stringify(res));
+      }
     });
 
   };
