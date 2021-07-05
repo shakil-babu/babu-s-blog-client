@@ -36,35 +36,39 @@ const [darkmode, setDarkmode] = useContext(darkmodeContext)
 
 
   
-  return (
-    <>
-    <Head>
-        <title>হোম | শাকিল বাবুর ঝুলি</title>
-        <link rel="stylesheet" href="../public/favicon.io" />
-    </Head>
-        <section className="container">
-
-         <Search changeHandler={changeHandler} toggle={toggle} isSearch={isSearch} val={val} />
-            
-          {/* post showcase area */}
-            <div>
-              {
-                filterData.length > 0 ? (
-                  <div>
-                      {
-                        filterData.map((post, index)=> {
-                          return <Post key={index} post={post} />
-                        })
-                    }
-                  </div>
-                ):(
-                   <h4 className={darkmode ? 'error lightColor':'error darkColor'}>দুঃখিত ! {val} নামে কোনো আরটিকেল পাওয়া যায় নি । </h4>
-                )
-              }
-            </div>
-        </section>
-    </>
-  )
+  try{
+    return (
+      <>
+      <Head>
+          <title>হোম | শাকিল বাবুর ঝুলি</title>
+          <link rel="stylesheet" href="../public/favicon.io" />
+      </Head>
+          <section className="container">
+  
+           <Search changeHandler={changeHandler} toggle={toggle} isSearch={isSearch} val={val} />
+              
+            {/* post showcase area */}
+              <div>
+                {
+                  filterData.length > 0 ? (
+                    <div>
+                        {
+                          filterData.map((post, index)=> {
+                            return <Post key={index} post={post} />
+                          })
+                      }
+                    </div>
+                  ):(
+                     <h4 className={darkmode ? 'error lightColor':'error darkColor'}>দুঃখিত ! {val} নামে কোনো আরটিকেল পাওয়া যায় নি । </h4>
+                  )
+                }
+              </div>
+          </section>
+      </>
+    )
+  } catch(e){
+    return null;
+  }
 }
 
 export default Home ; 

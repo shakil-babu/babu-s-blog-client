@@ -8,20 +8,25 @@ export const AuthContext = createContext();
 const Layout = ({children}) => {
     const [darkmode, setDarkmode] = useState(false);
     const [user, setUser] = useState(null);
-    return (
-        <>
-            <AuthContext.Provider value={[user, setUser]}>
-            <darkmodeContext.Provider value={[darkmode, setDarkmode]}>
-                <section className={darkmode ? 'darkBg':'lightBg'}>
-                <Navbar/>
-                {children}
-                <Footer/>
-                </section>
-            </darkmodeContext.Provider>
-            </AuthContext.Provider>
-           
-        </>
-    )
+    
+    try{
+        return (
+            <>
+                <AuthContext.Provider value={[user, setUser]}>
+                <darkmodeContext.Provider value={[darkmode, setDarkmode]}>
+                    <section className={darkmode ? 'darkBg':'lightBg'}>
+                    <Navbar/>
+                    {children}
+                    <Footer/>
+                    </section>
+                </darkmodeContext.Provider>
+                </AuthContext.Provider>
+               
+            </>
+        )
+    } catch(e){
+        return null; 
+    }
 }
 
 export default Layout ;
