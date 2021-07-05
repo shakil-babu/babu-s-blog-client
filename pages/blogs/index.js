@@ -8,19 +8,6 @@ import Post from '../../Components/Post.js';
 import { blogsContext } from '../../Components/Layout.js';
 const Index = ({posts}) => {
 
-const arr = [...posts];
-const [blogs, setBlogs] = useContext(blogsContext);
-const setData = () => {
-  setBlogs(arr);
-}
-useEffect(() => {
-  setData();
-})
-
-// console.log('my blogs: ', blogs)
-console.log('shakil : ', posts);
-
-
   // state
   const [isSearch, setIsSearch] = useState(false);
   const [filterData, setFilterData] = useState([]);

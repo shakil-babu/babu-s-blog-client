@@ -7,9 +7,6 @@ import { useContext } from 'react';
 import Head from 'next/head';
 import { AuthContext, darkmodeContext } from '../../Components/Layout';
 import Comment from '../../Components/Comment';
-
-import {FaHeart, FaRegGrinHearts, FaHamburger, FaGuitar} from 'react-icons/fa';
-import {AiFillLike} from 'react-icons/ai';
 import Login from '../../Components/Login';
 import SingleComment from '../../Components/SingleComment';
 const PostDetails = ({frontmatter:{title, date, author, cover_image}, slug, content}) => {

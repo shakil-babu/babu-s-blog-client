@@ -7,10 +7,7 @@ export const AuthContext = createContext();
 
 const Layout = ({children}) => {
     const [darkmode, setDarkmode] = useState(false);
-
     const [user, setUser] = useState(null);
-    
-  
     return (
         <>
             <AuthContext.Provider value={[user, setUser]}>
