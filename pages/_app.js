@@ -3,11 +3,15 @@ import '../styles/globals.css'
 
 
 function MyApp({ Component, pageProps }) {
-  return (
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-  )
+  try{
+    return (
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+)
+  }catch(e){
+    return null; 
+  }
 }
 
 export default MyApp;
