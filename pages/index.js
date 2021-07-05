@@ -67,7 +67,7 @@ const [darkmode, setDarkmode] = useContext(darkmodeContext)
       </>
     )
   } catch(e){
-    return null;
+    return null; 
   }
 }
 
@@ -75,7 +75,7 @@ export default Home ;
 
 
 // getStaticProps
-Error.getInitialProps = async () => {
+export const getStaticProps= async () => {
   
   // get files from the posts dir
   const files = fs.readdirSync(path.join('posts'));
