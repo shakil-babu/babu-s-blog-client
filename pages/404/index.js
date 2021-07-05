@@ -1,18 +1,10 @@
 
 import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import { darkmodeContext } from '../../Components/Layout';
 import styles from '../../styles/NotFound.module.css';
 const Notfound = () => {
     const [darkmode, setDarkmode] = useContext(darkmodeContext);
-    // const router = useRouter();
-
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         router.push('/')
-    //     }, 3000);
-    // },[])
     return (
         <>
             <section>

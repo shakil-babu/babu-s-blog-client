@@ -9,24 +9,20 @@ const Layout = (props) => {
     const [darkmode, setDarkmode] = useState(false);
     const [user, setUser] = useState(null);
 
-    try{
-        return (
-            <>
-                <AuthContext.Provider value={[user, setUser]}>
-                <darkmodeContext.Provider value={[darkmode, setDarkmode]}>
-                    <section className={darkmode ? 'darkBg':'lightBg'}>
-                    <Navbar/>
-                    {props?.children}
-                    <Footer/>
-                    </section>
-                </darkmodeContext.Provider>
-                </AuthContext.Provider>
-               
-            </>
-        )
-    } catch(e){
-        return null; 
-    }
+    return (
+        <>
+            <AuthContext.Provider value={[user, setUser]}>
+            <darkmodeContext.Provider value={[darkmode, setDarkmode]}>
+                <section className={darkmode ? 'darkBg':'lightBg'}>
+                <Navbar/>
+                {props?.children}
+                <Footer/>
+                </section>
+            </darkmodeContext.Provider>
+            </AuthContext.Provider>
+           
+        </>
+    )
 }
 
 export default Layout ;
