@@ -47,7 +47,7 @@ const SingleComment = ({ user, slug }) => {
                       <h5>{item.name}</h5>
                       <p>{item.comment}</p>
                       <div>
-                        {user?.email !== item.email && user?.email ? (
+                        {/* {user?.email !== item.email && user?.email ? (
                           <div>
                             <button onClick={toggle}>reply</button>
 
@@ -55,7 +55,7 @@ const SingleComment = ({ user, slug }) => {
                           </div>
                         ) : (
                           ""
-                        )}
+                        )} */}
 
                         {user?.email === item.email && (
                           <div className={styles.edbtn}>
