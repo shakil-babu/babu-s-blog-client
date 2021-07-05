@@ -71,7 +71,7 @@ export default Home ;
 
 
 // getStaticProps
-Error.getInlineProps = async () => {
+Error.getInitialProps = async () => {
   
   // get files from the posts dir
   const files = fs.readdirSync(path.join('posts'));
