@@ -24,13 +24,14 @@ const [darkmode, setDarkmode] = useContext(darkmodeContext)
       setVal(event.target.value);
   }
 
-  // data matched and search
-      const title = posts.filter((post) => post.slug.toLowerCase().includes(val.toLowerCase()));
-      setFilterData(title);
+  
 
 
   // useEffect
   useEffect(() => {
+    // data matched and search
+    const title = posts.filter((post) => post.slug.toLowerCase().includes(val.toLowerCase()));
+    setFilterData(title);
   },[val])
 
 
