@@ -8,7 +8,7 @@ export const AuthContext = createContext();
 const Layout = ({children}) => {
     const [darkmode, setDarkmode] = useState(false);
     const [user, setUser] = useState(null);
-    
+
     try{
         return (
             <>
@@ -16,7 +16,7 @@ const Layout = ({children}) => {
                 <darkmodeContext.Provider value={[darkmode, setDarkmode]}>
                     <section className={darkmode ? 'darkBg':'lightBg'}>
                     <Navbar/>
-                    {children}
+                    {children?children:''}
                     <Footer/>
                     </section>
                 </darkmodeContext.Provider>
