@@ -54,7 +54,6 @@ const Comment = ({user, slug}) => {
         }
 
         setComment('');
-        window.location.reload(false);
     }
 
 
