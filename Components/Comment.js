@@ -54,6 +54,10 @@ const Comment = ({user, slug}) => {
         }
 
         setComment('');
+       
+        setTimeout(() => {
+            window.location.reload(false);
+        }, 2000)
     }
 
 
