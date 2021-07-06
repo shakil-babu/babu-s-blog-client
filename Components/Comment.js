@@ -28,9 +28,7 @@ const Comment = ({user, slug}) => {
 
     // form submit handler
     const submitHandler = (event) => {
-        // event.preventDefault();
-
-        console.log(comment);
+        event.preventDefault();
         const dt = {
             name:name,email:email,img:img,date:dat, comment:comment, slug:slug
         }
