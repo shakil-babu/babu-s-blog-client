@@ -1,4 +1,3 @@
-
 import {useState } from 'react';
 import styles from '../styles/Comment.module.css';
 const Comment = ({user, slug}) => {

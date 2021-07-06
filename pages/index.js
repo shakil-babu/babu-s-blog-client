@@ -7,6 +7,7 @@ import Search from '../Components/Search';
 
 import { useContext, useEffect, useState } from 'react';
 import { darkmodeContext } from '../Components/Layout';
+import SkeletonPostCard from '../skeletons/SkeletonPostCard';
 const Home = ({posts}) => {
 const [darkmode, setDarkmode] = useContext(darkmodeContext)
   // state
@@ -24,8 +25,14 @@ const [darkmode, setDarkmode] = useContext(darkmodeContext)
       setVal(event.target.value);
   }
 
-  
 
+  // for skeleton
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+       setLoading(false);
+    }, 3000);
+  },[])
 
   // useEffect
   useEffect(() => {
@@ -44,25 +51,37 @@ const [darkmode, setDarkmode] = useContext(darkmodeContext)
           <link rel="stylesheet" href="../public/favicon.io" />
       </Head>
           <section className="container">
-  
-           <Search changeHandler={changeHandler} toggle={toggle} isSearch={isSearch} val={val} />
-              
-            {/* post showcase area */}
-              <div>
+
+           {
+             loading ? (
+              <>
                 {
-                  filterData.length > 0 ? (
-                    <div>
-                        {
-                          filterData.map((post, index)=> {
-                            return <Post key={index} post={post} />
-                          })
-                      }
-                    </div>
-                  ):(
-                     <h4 className={darkmode ? 'error lightColor':'error darkColor'}>দুঃখিত ! {val} নামে কোনো আরটিকেল পাওয়া যায় নি । </h4>
-                  )
+                  filterData.map((item, index) => {
+                    return <SkeletonPostCard key={index} />
+                  })
                 }
-              </div>
+              </>
+             ):(
+               <>
+                  <Search changeHandler={changeHandler} toggle={toggle} isSearch={isSearch} val={val} />
+                  <div>
+                    {
+                      filterData.length > 0 ? (
+                        <div>
+                            {
+                              filterData.map((post, index)=> {
+                                return <Post key={index} post={post} />
+                              })
+                          }
+                        </div>
+                      ):(
+                        <h4 className={darkmode ? 'error lightColor':'error darkColor'}>দুঃখিত ! {val} নামে কোনো আরটিকেল পাওয়া যায় নি । </h4>
+                      )
+                    }
+                  </div>
+               </>
+             )
+           }
           </section>
       </>
     )

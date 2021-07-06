@@ -60,8 +60,8 @@
 }
 .greeting_img img{
     width: 50px !important;
-    height: 50px !important;
-    border-radius: 100%;
+    width: 50px !important;
+    border-radius: 50%;
     margin-right: 10px;
 }
 .greeting_img h5{
