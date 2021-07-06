@@ -1,8 +1,6 @@
 import {useState } from 'react';
 import styles from '../styles/Comment.module.css';
 const Comment = ({user, slug}) => {
-    const [success, setSuccess] = useState(false);
-    const [validate, setValidate] = useState(false);
 
     // from context (destructuring)
     const {name, email, img} = user ;
@@ -38,9 +36,9 @@ const Comment = ({user, slug}) => {
         }
 
         if(comment === ''){
-            setValidate(true);
+            console.log('have to fill in the blank!');
         }else{
-            fetch(`https://pristine-kenai-fjords-11934.herokuapp.com/addComment`, {
+            fetch("https://pristine-kenai-fjords-11934.herokuapp.com/addComment", {
             method: 'POST',
             headers: {
                 "content-type": "application/json",
@@ -49,8 +47,6 @@ const Comment = ({user, slug}) => {
         })
             .then((response) => response.json())
             .then((data) => {
-                setSuccess(true)
-                setValidate(false)
             });
         }
 
@@ -59,19 +55,23 @@ const Comment = ({user, slug}) => {
 
 
 
-    return (
-        <>
-            <section className={styles.comment_area}>
-                <div className={styles.greeting_img}>
-                    <img src={user.img} alt="img" /> <h5>হ্যালো {user.name}, আপনার মতামত শেয়ার করুন ।</h5>
-                </div>
-                <form onSubmit={submitHandler} className={styles.comment_form}>
-                    <textarea onChange={changeHandler} value={comment} cols="30" rows="5" placeholder='আপনার মতামত' ></textarea>
-                    <button type='submit'>পাঠান</button>
-                </form>
-            </section>
-        </>
-    )
+    try{
+        return (
+            <>
+                <section className={styles.comment_area}>
+                    <div className={styles.greeting_img}>
+                        <img src={user.img} alt="img" /> <h5>হ্যালো {user.name}, আপনার মতামত শেয়ার করুন ।</h5>
+                    </div>
+                    <form onSubmit={submitHandler} className={styles.comment_form}>
+                        <textarea onChange={changeHandler} value={comment} cols="30" rows="5" placeholder='আপনার মতামত' ></textarea>
+                        <button type='submit'>পাঠান</button>
+                    </form>
+                </section>
+            </>
+        )
+    } catch(e){
+        return null ;
+    }
 }
 
 export default Comment
