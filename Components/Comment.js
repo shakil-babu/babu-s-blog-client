@@ -1,5 +1,6 @@
 import {useState } from 'react';
 import styles from '../styles/Comment.module.css';
+
 const Comment = ({user, slug}) => {
 
     // from context (destructuring)
@@ -19,12 +20,15 @@ const Comment = ({user, slug}) => {
     }
     const dat = formatAMPM(new Date);
 
+
     // for comment
     const [comment, setComment] = useState('');
     // change handler
     const changeHandler = (event) => {
         setComment(event.target.value);
+
     }
+
 
     // form submit handler
     const submitHandler = (event) => {
@@ -37,6 +41,7 @@ const Comment = ({user, slug}) => {
             console.log('have to fill in the blank!');
         }else{
             fetch("https://pristine-kenai-fjords-11934.herokuapp.com/addComment", {
+                // 
             method: 'POST',
             headers: {
                 "content-type": "application/json",
@@ -49,6 +54,7 @@ const Comment = ({user, slug}) => {
         }
 
         setComment('');
+        window.location.reload(false);
     }
 
 
@@ -64,6 +70,8 @@ const Comment = ({user, slug}) => {
                         <textarea onChange={changeHandler} value={comment} cols="30" rows="5" placeholder='আপনার মতামত' ></textarea>
                         <button type='submit'>পাঠান</button>
                     </form>
+                    
+
                 </section>
             </>
         )

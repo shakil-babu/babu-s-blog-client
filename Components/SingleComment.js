@@ -20,6 +20,7 @@ const SingleComment = ({ user, slug }) => {
     <>
       <section className={styles.sc_area}>
         <div>
+
           {specificComment.sort((a,b) => a-b).map((item) => {
             return (
               <main>
@@ -44,6 +45,7 @@ const SingleComment = ({ user, slug }) => {
               </main>
             );
           })}
+          
         </div>
       </section>
     </>
