@@ -11,7 +11,7 @@ const SkeletonProfile = () => {
             <div className={styles.infoFlex}>
                 <div className={darkmode ? `${styles.imgContent} ${styles.darkmode}`:styles.imgContent}>
 
-                    <Skeleton width={200} height={200} />
+                    <Skeleton circle={true} width={200} height={200} />
                     <Skeleton width={200} />
                     <Skeleton width={190}/>
                     <div className={styles.iconFlex}>

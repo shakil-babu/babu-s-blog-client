@@ -40,7 +40,7 @@ const Comment = ({user, slug}) => {
         if(comment === ''){
             setValidate(true);
         }else{
-            fetch(`https://pristine-kenai-fjords-11934.herokuapp.com/addComment`, {
+            fetch(`https://pristine-kenai-fjords-11934.herokuapp.com/readComments`, {
             method: 'POST',
             headers: {
                 "content-type": "application/json",

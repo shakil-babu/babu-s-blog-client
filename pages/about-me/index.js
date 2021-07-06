@@ -15,7 +15,7 @@ const Index = () => {
   useEffect(() => {
     setTimeout(() => {
        setLoading(false);
-    }, 3000);
+    }, 2000);
   },[])
 
 

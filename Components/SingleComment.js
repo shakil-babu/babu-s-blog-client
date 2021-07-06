@@ -57,12 +57,12 @@ const SingleComment = ({ user, slug }) => {
                           ""
                         )} */}
 
-                        {user?.email === item.email && (
+                        {/* {user?.email === item.email && (
                           <div className={styles.edbtn}>
                             <button className={styles.editbtn}>edit</button>
                             <button className={styles.delbtn}>delete</button>
                           </div>
-                        )}
+                        )} */}
                       </div>
                       <small>
                         <small>{item.date}</small>
@@ -70,7 +70,7 @@ const SingleComment = ({ user, slug }) => {
                     </div>
                   </div>
 
-                  <SingleReply rd={rd} item={item} isReply={isReply} toggle={toggle} user={user} slug={slug}/>
+                  {/* <SingleReply rd={rd} item={item} isReply={isReply} toggle={toggle} user={user} slug={slug}/> */}
                 </div>
               </main>
             );
