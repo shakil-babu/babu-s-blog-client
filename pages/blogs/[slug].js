@@ -26,9 +26,6 @@ const PostDetails = ({frontmatter:{title, date, author, cover_image}, slug, cont
             <section ref={target} className={styles.post_details_area}>
                 <div className="container">
                     <main className={darkmode ? styles.post_grid_layout : styles.post_grid_dark_layout}>
-                        <div>
-
-                        </div>
                         <div className={styles.post_content}>
                             <img src={cover_image} alt="img" />
                             <div className={styles.author_date}>

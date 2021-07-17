@@ -66,7 +66,19 @@
     margin-top: 8px;
 }
 
-
+.allCommentsBtn{
+    background-color: teal;
+    border: none;
+    outline: none;
+    padding: 12px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+    width: 200px;
+}
+.allCommentsBtn:hover{
+    background-color: rgba(0, 128, 128, 0.795);
+}
 
 /* ===================== */
 .replies_area{

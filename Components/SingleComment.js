@@ -10,8 +10,22 @@ const SingleComment = ({ user, slug }) => {
       .then((data) => setComments(data));
   };
 
-  const specificComment = comments.filter((item) => item.slug === slug);
-  console.log("realPost: ", specificComment);
+  const specificComment = comments.filter((item) => item.slug === slug).sort((a,b) => a-b);
+
+
+  const [isAllComments, setIsAllComments] = useState(false);
+
+  // toggle handler
+  const toggleHandler = () => {
+    setIsAllComments(!isAllComments);
+  }
+
+  let spComments;
+  if(isAllComments){
+    spComments = specificComment;
+  }else{
+    spComments = specificComment.slice(0,5);
+  }
 
   useEffect(() => {
     readComments();
@@ -21,7 +35,7 @@ const SingleComment = ({ user, slug }) => {
       <section className={styles.sc_area}>
         <div>
 
-          {specificComment.sort((a,b) => a-b).map((item) => {
+          {spComments.map((item) => {
             return (
               <main>
                 <div>
@@ -46,6 +60,11 @@ const SingleComment = ({ user, slug }) => {
             );
           })}
           
+          {
+            specificComment.length > 5 && (
+              <button onClick={toggleHandler} className={styles.allCommentsBtn}>{isAllComments ? 'কিছু মন্তব্য লুকিয়ে রাখুন':'সবগুলো মন্তব্য দেখুন'}</button>
+            )
+          }
         </div>
       </section>
     </>
