@@ -43,7 +43,7 @@ const Comment = ({user, slug}) => {
         if(comment === ''){
             console.log('have to fill in the blank!');
         }else{
-            fetch("http://localhost:5000/addComment", {
+            fetch("https://pristine-kenai-fjords-11934.herokuapp.com/addComment", {
             
             // http://localhost:5000/addComment
             // https://pristine-kenai-fjords-11934.herokuapp.com/addComment
