@@ -23,6 +23,8 @@
     display: flex;
     align-items:center;
     justify-content: center;
+    position: sticky !important;
+    top: 0;
 }
 
 .nav_main_light{
@@ -33,6 +35,9 @@
     align-items:center;
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    position: sticky;
+    top: 0;
+
 }
 
 .nav_main a{

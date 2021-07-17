@@ -322,7 +322,14 @@ a {
 }
 
 
-
+/* =========================== reading post ================ */
+.reading-progress-bar {
+  position: sticky;
+  height: 5px;
+  top: 0;
+  background-color: #18b490;
+  margin-top:20px;
+}
 
 
 /* ======================= responsive ================ */

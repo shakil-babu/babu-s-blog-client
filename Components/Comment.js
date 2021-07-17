@@ -1,6 +1,6 @@
 import {useState } from 'react';
 import styles from '../styles/Comment.module.css';
-
+import design from '../styles/SingleComment.module.css';
 const Comment = ({user, slug}) => {
 
     // from context (destructuring)
@@ -30,6 +30,11 @@ const Comment = ({user, slug}) => {
     }
 
 
+
+    // dc = dubbola comment
+    const [dc, setDc] = useState({name:'', img:'', date:'', comment:''});
+    const [dtt, setDtt] = useState([]);
+    const [success, setSuccess] = useState(false);
     // form submit handler
     const submitHandler = (event) => {
         event.preventDefault();
@@ -41,7 +46,9 @@ const Comment = ({user, slug}) => {
             console.log('have to fill in the blank!');
         }else{
             fetch("https://pristine-kenai-fjords-11934.herokuapp.com/addComment", {
-                // 
+            
+            // http://localhost:5000/addComment
+            // https://pristine-kenai-fjords-11934.herokuapp.com/addComment
             method: 'POST',
             headers: {
                 "content-type": "application/json",
@@ -50,11 +57,17 @@ const Comment = ({user, slug}) => {
         })
             .then((response) => response.json())
             .then((data) => {
+   
             });
         }
-
+        setSuccess(true)
+                  
+        setDc({...dc, name:name, img:img, date:dat, comment:comment})
+        setDtt([dc]);
         setComment('');
+
     }
+    
 
 
 
@@ -70,6 +83,29 @@ const Comment = ({user, slug}) => {
                         <button type='submit'>পাঠান</button>
                     </form>
                     
+                    {
+                        success && (
+                            dtt.map((item) => {
+                               return  <div>
+
+                            <div className={design.sc_flex}>
+                                <img src={item.img} alt="img" />
+
+                                <div className={design.sc_info}>
+                                <h5>{item.name}</h5>
+                                <p>{item.comment}</p>
+                                <div>
+
+                                </div>
+                                <small>
+                                    <small>{item.date}</small>
+                                </small>
+                                </div>
+                            </div>
+                        </div>
+                            })
+                        )
+                    }
 
                 </section>
             </>

@@ -3,25 +3,27 @@ import path from 'path';
 import matter from 'gray-matter';
 import marked from 'marked';
 import styles from '../../styles/Details.module.css';
-import { useContext } from 'react';
+import React, { useContext } from 'react';
 import Head from 'next/head';
 import { AuthContext, darkmodeContext } from '../../Components/Layout';
 import Comment from '../../Components/Comment';
 import Login from '../../Components/Login';
 import SingleComment from '../../Components/SingleComment';
+import ReadingProgress from '../../Components/ReadingProgress';
 const PostDetails = ({frontmatter:{title, date, author, cover_image}, slug, content}) => {
 
     const [darkmode, setDarkmode] = useContext(darkmodeContext);
     const [user, setUser] = useContext(AuthContext);
 
+    const target = React.createRef();
     return (
         <>
         <Head>
             <title>{title} | শাকিল বাবুর ঝুলি</title>
         </Head>
-            
-            <section className={styles.post_details_area}>
- 
+        
+        <ReadingProgress target={target}/>
+            <section ref={target} className={styles.post_details_area}>
                 <div className="container">
                     <main className={darkmode ? styles.post_grid_layout : styles.post_grid_dark_layout}>
                         <div>

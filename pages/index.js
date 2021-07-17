@@ -25,7 +25,6 @@ const [darkmode, setDarkmode] = useContext(darkmodeContext)
       setVal(event.target.value);
   }
 
-
   // for skeleton
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -37,7 +36,7 @@ const [darkmode, setDarkmode] = useContext(darkmodeContext)
   // useEffect
   useEffect(() => {
     // data matched and search
-    const title = posts.filter((post) => post.slug.toLowerCase().includes(val.toLowerCase()));
+    const title = posts.reverse().filter((post) => post.slug.toLowerCase().includes(val.toLowerCase()));
     setFilterData(title);
   },[val])
 

@@ -1,10 +1,11 @@
 
 .post_details_area{
     padding-bottom: 50px;
-    padding-top: 30px;
+    padding-top: 20px;
     width: 75%;
     margin: auto;
 }
+
 .dark_toggle{
     padding-bottom: 30px;
 }
@@ -150,7 +151,10 @@
     padding: 5px;
     border-radius: 5px;
 }
-
+.post_content p a{
+    text-decoration: underline;
+    color: blue;
+}
 .post_grid_dark_layout .post_content h3, .post_grid_dark_layout .post_content h2{
     font-size: 21px;
 }
