@@ -31,10 +31,8 @@ const Comment = ({user, slug}) => {
 
 
 
-    // dc = dubbola comment
-    const [dc, setDc] = useState({name:'', img:'', date:'', comment:''});
-    const [dtt, setDtt] = useState([]);
     const [success, setSuccess] = useState(false);
+    const [tempData , setTempData] = useState([{name:'',img:'',date:'',comment:''}])
     // form submit handler
     const submitHandler = (event) => {
         event.preventDefault();
@@ -45,7 +43,7 @@ const Comment = ({user, slug}) => {
         if(comment === ''){
             console.log('have to fill in the blank!');
         }else{
-            fetch("https://pristine-kenai-fjords-11934.herokuapp.com/addComment", {
+            fetch("http://localhost:5000/addComment", {
             
             // http://localhost:5000/addComment
             // https://pristine-kenai-fjords-11934.herokuapp.com/addComment
@@ -60,16 +58,12 @@ const Comment = ({user, slug}) => {
    
             });
         }
-        setSuccess(true)
-                  
-        setDc({...dc, name:name, img:img, date:dat, comment:comment})
-        setDtt([dc]);
+        setSuccess(true);
+        const newTempData = [...tempData, {name:name, img:img, date:dat, comment:comment}];
+        setTempData(newTempData);
         setComment('');
 
     }
-    
-
-
 
     try{
         return (
@@ -85,7 +79,7 @@ const Comment = ({user, slug}) => {
                     
                     {
                         success && (
-                            dtt.map((item) => {
+                            tempData.slice(1,tempData.length).reverse().map((item) => {
                                return  <div>
 
                             <div className={design.sc_flex}>

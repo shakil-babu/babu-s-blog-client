@@ -45,6 +45,7 @@
 .comment_form{
  display: flex;
  flex-direction: column;
+ margin-bottom: 80px;
 }
 
 .comment_form textarea, .comment_form input{
