@@ -50,7 +50,7 @@ const Navbar = () => {
             <section className={styles.navbar_section}>
                 <div className={styles.nav_title}>
                     <h1 className={darkmode ? `${styles.lightColor}`:`${styles.darkColor}`}><span>(</span> শাকিল বাবুর ঝুলি</h1>
-                    <h5 className={darkmode ? `${styles.lightColor}`:`${styles.darkColor}`}>হাবলুর মুখে " অ, আ, ক , খ "<span>)</span></h5>
+                    <h5 className={darkmode ? `${styles.lightColor}`:`${styles.darkColor}`}>হাবলুর মুখে " অ, আ, ক , খ " <span>)</span></h5>
                 </div>
 
                     <nav className={darkmode ?styles.nav_main: styles.nav_main_light}>
