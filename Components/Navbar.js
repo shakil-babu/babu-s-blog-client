@@ -87,7 +87,7 @@ const Navbar = () => {
 
                         
                         {
-                            darkmode ? <ImBrightnessContrast onClick={toggle} className='light'/> : <CgDarkMode onClick={toggle} className='dark'/>
+                            darkmode ? <CgDarkMode onClick={toggle} className='dark'/>: <ImBrightnessContrast onClick={toggle} className='light'/> 
                         }
 
 
