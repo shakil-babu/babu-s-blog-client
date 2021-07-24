@@ -15,9 +15,6 @@ const Login = () => {
    const googleSignIn = () => {
     signInWithGoogle().then((res) => {
       setUser(res);
-      if(res){
-        localStorage.setItem("loggedinUser", JSON.stringify(res));
-      }
     });
 
   };

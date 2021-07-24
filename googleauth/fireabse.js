@@ -19,6 +19,11 @@ export const initializeLoginFramework = () => {
 }
 
 
+const setUser = (res) => {
+  localStorage.setItem("loggedinUser", JSON.stringify(res)); 
+}
+
+
 export const signInWithGoogle = () => {
 const googleProvider = new firebase.auth.GoogleAuthProvider();
    return firebase.auth()
@@ -30,6 +35,7 @@ const googleProvider = new firebase.auth.GoogleAuthProvider();
         email:email,
         img:photoURL 
     }
+    setUser(signedInUser);
     return signedInUser ;
     // ...
   }).catch((error) => {
