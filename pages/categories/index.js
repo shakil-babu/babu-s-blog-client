@@ -70,7 +70,7 @@ const Categories = ({posts}) => {
                                 articles.map((item,index) => {
                                     return (
                                         <div key={index} className='ct-single-article'>
-                                            <Link href={`/blogs/${item.slug}`}><h4>{item.frontmatter.title}</h4></Link>
+                                            <Link href={`/blogs/${item.slug}`}><h4>({index+1}). {item.frontmatter.title}</h4></Link>
                                         </div>
                                     )
                                 })
