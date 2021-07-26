@@ -1,5 +1,6 @@
-/* =========== back btn ======= */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;900&display=swap');
 
+/* =========== back btn ======= */
 .back_btn{
     text-decoration: none;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
@@ -99,15 +100,16 @@
 }
 .post_grid_layout .post_content pre{
     padding: 10px;
-    background-color: #fff;
+    background-color: #f5f5f5;
     overflow-y: scroll;
+    border-radius: 10px;
 }
 .post_grid_layout .post_content pre code{
-    color: black;
-    font-family: monospace;
-    font-weight: bold;
+    color: #000;
+    font-weight: 400;
     line-height: 38px;
-    font-size: 20px;
+    font-size: 18px;
+    font-family: 'Source Code Pro', monospace;
 }
 .post_grid_layout .post_content p code{
     background-color: #18b490;
@@ -156,16 +158,20 @@
 }
 .post_grid_dark_layout .post_content pre{
     padding: 10px;
-    color: #e5e7eb;
-    background-color: #1f2937;
+    color: #000;
+    background-color: #f5f5f5;
+    
     overflow-y: scroll;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 }
 .post_grid_dark_layout .post_content pre code{
    background-color: none !important;
-    font-weight: bold;
-    font-family: monospace;
+    font-weight: 400;
     line-height: 38px;
-    font-size: 20px;
+    font-size: 18px;
+    font-family: 'Source Code Pro', monospace;
 }
 
 
