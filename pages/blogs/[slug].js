@@ -6,8 +6,10 @@ import styles from '../../styles/Details.module.css';
 import React, { useContext } from 'react';
 import Head from 'next/head';
 import { AuthContext, darkmodeContext } from '../../Components/Layout';
+import {FaArrowAltCircleLeft} from 'react-icons/fa';
 import Comment from '../../Components/Comment';
 import Login from '../../Components/Login';
+import Router from 'next/router'
 import SingleComment from '../../Components/SingleComment';
 import ReadingProgress from '../../Components/ReadingProgress';
 const PostDetails = ({frontmatter:{title, date, author, cover_image}, slug, content}) => {
@@ -22,9 +24,12 @@ const PostDetails = ({frontmatter:{title, date, author, cover_image}, slug, cont
             <title>{title} | শাকিল বাবুর ঝুলি</title>
         </Head>
         
+
+        
         <ReadingProgress target={target}/>
             <section ref={target} className={styles.post_details_area}>
                 <div className="container">
+                    <a className={styles.back_btn}  onClick={() => Router.back()}><FaArrowAltCircleLeft className={styles.back_icon} /> back</a>
                     <main className={darkmode ? styles.post_grid_layout : styles.post_grid_dark_layout}>
                         <div className={styles.post_content}>
                             <img src={cover_image} alt="img" />
