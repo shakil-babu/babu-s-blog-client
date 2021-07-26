@@ -21,9 +21,9 @@ const Footer = () => {
 
                             <h6>সময় থাকলে দেখতে পারেন :-</h6>
                             <a href="https://eloquentjavascript.net/" target='_blank'>Eloquent JavaScript</a> <br />
-                            <a href="https://github.com/getify/You-Dont-Know-JS" target='_blank'>You Don't Know JS</a>
-                            <a href="https://www.learncpp.com/" target='_blank'>Learn C++</a>
-                            <a href="https://www.cplusplus.com/doc/tutorial/" target='_blank'>Best for C++</a>
+                            <a href="https://github.com/getify/You-Dont-Know-JS" target='_blank'>You Don't Know JS</a> <br/>
+                            <a href="https://www.learncpp.com/" target='_blank'>Learn C++</a> <br/>
+                            <a href="https://www.cplusplus.com/doc/tutorial/" target='_blank'>Best for C++</a> <br/>
                         </div>
 
                     <h5 className={styles.footer_copyright}> <i>&copy;</i>  স্বত্ব <span>শাকিল বাবুর ঝুলি</span> {currentYear}</h5>
