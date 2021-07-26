@@ -31,6 +31,8 @@ const Categories = ({posts}) => {
     const [articles, setArticles] = useState([]);
     const [sct, setSct] = useState('');
     const [show, setShow] = useState(false);
+
+
     const findPosts = (ct) => {
         const arts = posts.filter((item) => item.frontmatter.category === ct);
         setArticles(arts);
@@ -61,19 +63,21 @@ const Categories = ({posts}) => {
                         </div>
 
 
-                    <div className='ct-showcase-box'>
-                        {show && <h3 className='ct-lan-title'>{sct.toUpperCase()} রিলেটেড মোট {articles.length} টি আরটিকেল আছে ।</h3>}
-                        {
-                            articles.map((item,index) => {
-                                return (
-                                    <div key={index} className='ct-single-article'>
-                                        <Link href={`/blogs/${item.slug}`}><h4>{item.frontmatter.title}</h4></Link>
-                                    </div>
-                                )
-                            })
-                        }
-
-                    </div>
+                        {show && (
+                            <div className='ct-showcase-box'>
+                            <h3 className='ct-lan-title'>{sct.toUpperCase()} রিলেটেড মোট {articles.length} টি আরটিকেল আছে ।</h3>
+                            {
+                                articles.map((item,index) => {
+                                    return (
+                                        <div key={index} className='ct-single-article'>
+                                            <Link href={`/blogs/${item.slug}`}><h4>{item.frontmatter.title}</h4></Link>
+                                        </div>
+                                    )
+                                })
+                            }
+    
+                        </div>
+                        )}
 
                     </section>
                 </div>
