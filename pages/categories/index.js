@@ -61,12 +61,12 @@ const Categories = ({posts}) => {
                         </div>
 
 
-                    <div className=''>
-                        {show && <h3>{sct.toUpperCase()} রিলেটেড মোট {articles.length} টি আরটিকেল আছে ।</h3>}
+                    <div className='ct-showcase-box'>
+                        {show && <h3 className='ct-lan-title'>{sct.toUpperCase()} রিলেটেড মোট {articles.length} টি আরটিকেল আছে ।</h3>}
                         {
                             articles.map((item,index) => {
                                 return (
-                                    <div key={index} className={darkmode ? 'spi dark-bg':'spi light-bg'}>
+                                    <div key={index} className='ct-single-article'>
                                         <Link href={`/blogs/${item.slug}`}><h4>{item.frontmatter.title}</h4></Link>
                                     </div>
                                 )

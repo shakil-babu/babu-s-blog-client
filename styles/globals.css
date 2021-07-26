@@ -264,6 +264,36 @@ a {
   opacity: 0.7;
 
 }
+.ct-single-article{
+  border-bottom: 1px solid #eee;
+  padding: 18px;
+  border-radius: 5px;
+  margin-top: 5px;
+
+}
+.ct-single-article h4{
+  margin: 0;
+  font-size: 15px;
+}
+.ct-single-article:hover{
+  background-color: #eee;
+  cursor: pointer;
+  color: #18b490;
+}
+
+.ct-lan-title{
+  background-color: #18b490;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.ct-showcase-box{
+  overflow-y: scroll;
+  height: 500px;
+  padding: 30px;
+}
 .active{
   background-color: #18b490 !important;
   text-align: center !important;
