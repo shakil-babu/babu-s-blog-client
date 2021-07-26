@@ -36,7 +36,7 @@ const [darkmode, setDarkmode] = useContext(darkmodeContext)
   // useEffect
   useEffect(() => {
     // data matched and search
-    const title = posts.reverse().filter((post) => post.slug.toLowerCase().includes(val.toLowerCase()));
+    const title = posts.sort((a, b) => 0.5 - Math.random()).filter((post) => post.slug.toLowerCase().includes(val.toLowerCase()));
     setFilterData(title);
   },[val])
 
