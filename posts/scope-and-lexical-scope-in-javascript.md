@@ -2,7 +2,7 @@
 title: "স্কোপ(Scope) এন্ড লেক্সিক্যাল স্কোপ(Lexical Scope) ইন জাভাস্ক্রিপ্ট"
 date: 'June 24 2021'
 author: 'Shakil Babu'
-cover_image: "/images/scope.jpg"
+cover_image: "/images/scopeandlexical.png"
 desc: "স্কোপিং(Scoping) জাভাস্ক্রিপ্টে একটি  গুরুত্বপূর্ন কনসেপ্ট । সোজা সাপ্টায় স্কোপ বলতে দুনিয়া বা এরিয়াকে বোঝায় । অর্থাৎ, আমরা কোন ভ্যারিয়েবল বা ফাংশন কোথা থেকে এক্সেস করতে পারবো আর কোথা থেকে পারবো না সেইটাই মুলত স্কোপ জাভাস্ক্রিপ্টে ২ ধরনের স্কোপ রয়েছে : ১। লোকাল(Local) স্কোপ ২। গ্লোবাল(Global) স্কোপ"
 category: 'javascript'
 ---
