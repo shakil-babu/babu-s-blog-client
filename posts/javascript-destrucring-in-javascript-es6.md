@@ -2,7 +2,7 @@
 title: "ডি-স্ট্রাকচারিং (Destructuring) - একটি স্মার্ট টেকনিক "
 date: 'June 19 2021'
 author: 'Shakil Babu'
-cover_image: "/images/ds.jpg"
+cover_image: "/images/destructuring.png"
 desc: "আমরা প্রায় সবাই চাই যেকোনো কাজ কে একটু সহজে এবং কম সময়ে স্মার্ট ভাবে করতে । যাতে সময়টাও একটু সেইভ হয় সাথে কাজটাও বেশি করা যায়। জাভাস্ক্রিপ্ট এর ইএস৬ এ ডি-স্ট্রাকচারিং (Destructuring) নামে একটি টেকনিকের আবির্ভাব হয় ।
 যেইটা মূলত কাজ করে জাভাস্ক্রিপ্টের Array এবং Object ডাটা স্ট্রাকচারের সাথে ।"
 category: 'javascript'

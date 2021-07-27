@@ -2,7 +2,7 @@
 title: "নাম্বার(number) মেথডস জাভাস্ক্রিপ্ট ইএস৬(ES6)"
 date: 'June 25 2021'
 author: 'Shakil Babu'
-cover_image: "/images/js.png"
+cover_image: "/images/numbermethods.png"
 desc: "জাভাস্ক্রিপ্ট ইএস৫(ES5) এ নাম্বার(number) এর অনেক মেথডস সম্পর্কে জেনেছি এবং কাজও করেছি । এবার জাভাস্ক্রিপ্ট ইএস৬(ES6) এ নতুন কয়েকটি নাম্বার মেথডস রিলিজ দেওয়া হয়েছে :- ১। isInteger() ২। isSafeInteger() ৩। isFinite() ৪। isNaN()"
 category: 'javascript'
 ---

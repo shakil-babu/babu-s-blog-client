@@ -2,7 +2,7 @@
 title: "findIndex মেথড "
 date: 'June 29 2021'
 author: 'Shakil Babu'
-cover_image: "/images/findIndex.jpg"
+cover_image: "/images/findIndex.png"
 desc: "গত লেকচারে, হাবলু find মেথড নিয়ে বকবক করেছিলো । এই লেকচারে findIndex মেথড নিয়ে আলোচনা করবে । আপনি যদি বুঝে থাকেন যে, find মেথড কিভাবে কাজ করে তাহলে আপনার কাছে findIndex মেথড ডাল-ভাত। findIndex মেথড কিভাবে কাজ করে ? find মেথডের মতোই কোনো একটা অ্যারে কে ইটারেট করে অর্থাৎ, প্রত্যেকটা অ্যারে আইটেমের উপরে স্পেসেফিক কোনো ফাংশন "
 category: 'javascript'
 ---

@@ -2,7 +2,7 @@
 title: "স্ট্রিং(string) মেথডস ইন জাভাস্ক্রিপ্ট ইএস৬(ES6)"
 date: 'June 26 2021'
 author: 'Shakil Babu'
-cover_image: "/images/js.png"
+cover_image: "/images/stringmethods.png"
 desc: "যদিও আমরা স্ট্রিং(string) কি , কিভাবে ডিক্লেয়ার করা হয় সবই জানি । যখন আমরা কোনো স্ট্রিং(string) ডিক্লেয়ার করি তখন ডিক্লেয়ারকৃত স্ট্রিং(string) টির প্রত্যেকটা ক্যারেক্টারের একটা করে ইন্ডেক্স নাম্বার থাকে যেমন :-"
 category: 'javascript'
 ---

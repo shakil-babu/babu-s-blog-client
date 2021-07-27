@@ -2,7 +2,7 @@
 title: "টেমপ্লেট লিটারেল(Template Literal)"
 date: 'June 23 2021'
 author: 'Shakil Babu'
-cover_image: "/images/template.jpg"
+cover_image: "/images/templateliteral.png"
 desc: "জাভাস্ক্রিপ্ট ইএস ৬(ES6) এ নতুনভাবে স্ট্রিং ডিক্লেয়ার এবং কিছু মজার কাজ করার জন্যই এসেছে টেমপ্লেট লিটারেল(Template Literal) যাকে টেমপ্লেট স্ট্রিং (Template String) ও বলা হয়। হ্যালো সুন্দর মানুষজন, আজকের এই নতুন আরটিকেলে আপনাকে স্বাগতম । আজকে আলোচনার বিষয় হচ্ছে টেমপ্লেট লিটারেল(Template Literal)। "
 category: 'javascript'
 ---

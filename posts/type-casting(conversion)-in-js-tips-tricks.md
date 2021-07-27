@@ -2,7 +2,7 @@
 title: "Type conversion(casting) - এক টাইপ থেকে অন্য টাইপে রুপান্তর "
 date: 'July 22 2021'
 author: 'Shakil Babu'
-cover_image: "/images/typecasting.jpg"
+cover_image: "/images/typecasting.png"
 desc: "আশা করি আমরা জাভাস্ক্রিপ্ট টাইপ কনভারশন বা কাস্টিং একটু আধটু হলেও পারি । আজকে আমি কিছু টাইপ কাস্টিং সমন্ধে আলোচনা করবো হয়তো আপনারা অনেকেই পারেন বা জানেন। যেহেতু এইটা জাভাস্ক্রিপ্ট টিপ্স অ্যান্ড ট্রিক্সের টিউটোরিয়াল সেহেতু অবশই আমি সোজা ওয়ে টাই বেছে নিবো । "
 category: 'javascript'
 ---
