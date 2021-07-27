@@ -102,6 +102,7 @@
     padding: 10px;
     background-color: #f5f5f5;
     border-radius: 10px;
+    overflow-x: scroll;
 }
 .post_grid_layout .post_content pre code{
     color: #000;
@@ -161,6 +162,7 @@
     background-color: #f5f5f5;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow-x: scroll;
 
 }
 .post_grid_dark_layout .post_content pre code{

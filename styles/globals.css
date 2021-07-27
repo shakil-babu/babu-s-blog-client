@@ -198,9 +198,10 @@ a {
   background-color: #18b490;
   padding: 5px;
   border-radius: 5px;
-  width: 150px;
+  width: 250px;
   text-align: center;
   margin-bottom: 15px;
+  font-size: 16px;
 }
 .post_info h1{
   font-size: 30px;
