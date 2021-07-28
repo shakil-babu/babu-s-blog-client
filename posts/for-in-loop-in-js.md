@@ -3,7 +3,7 @@ title: "for in loop - ফর ইন লুপ"
 date: 'July 10 2021'
 author: 'Shakil Babu'
 cover_image: "/images/forin.png"
-desc: "comming soon"
+desc: "for, while এবং do..while লুপ ছাড়াও জাভাস্ক্রিপ্টে আরও একটি লুপের সাথে পরিচয় করিয়ে দেওয়া হয়েছে নাম for...in লুপ। এই লুপের সাহায্যে  অবজেক্ট (object) এর সব প্রোপার্টিকে খুব সহজেই ইটারেট করা যায়। "
 category: 'javascript'
 ---
 
