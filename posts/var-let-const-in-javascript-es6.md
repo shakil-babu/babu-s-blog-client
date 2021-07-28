@@ -2,7 +2,7 @@
 title: "Var, Let, and Const - পার্থক্যটা কি এবং কোথায় ? "
 date: 'June 18 2021'
 author: 'Shakil Babu'
-cover_image: "/images/var.jpg"
+cover_image: "/images/varletconst.png"
 desc: "আমরা জানি যে let, var, const এই keyword গুলো ব্যাবহার করে variable  ডিক্লেয়ার করা হয় । let, var and const এই তিনটি keyword এর আলাদা আলাদা ইউসকেস আছে তো বেশি কথা না বলে ছোট্ট একটা Example দিয়ে শুরু করা যাক।"
 category: 'javascript'
 ---
