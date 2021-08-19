@@ -51,8 +51,9 @@
 }
 
 .title {
-  font-size: 40px !important;
+  font-size: 35px !important;
   margin: 0;
+  text-transform: uppercase;
 }
 .hr {
   color: black;
@@ -101,7 +102,6 @@
   padding: 10px;
   background-color: #f5f5f5;
   border-radius: 10px;
-  overflow-x: scroll;
 }
 .post_grid_layout .post_content pre code {
   color: #000;
@@ -171,7 +171,6 @@
   background-color: #f5f5f5;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  overflow-x: scroll;
 }
 .post_grid_dark_layout .post_content blockquote {
   padding: 10px;
@@ -225,6 +224,10 @@
 
   .title {
     font-size: 30px !important;
+  }
+  .post_grid_dark_layout .post_content pre,
+  .post_grid_layout .post_content pre {
+    overflow-x: scroll;
   }
 }
 
