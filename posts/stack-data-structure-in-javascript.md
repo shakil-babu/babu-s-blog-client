@@ -132,7 +132,7 @@ constructor(){
 
 ```
 isEmpty() {
-  return this.length === 0;
+  return this.stack.length === 0;
 }
 ```
 
@@ -175,13 +175,13 @@ class Stack {
 
 আপনি চাইলে `stack` এ প্রয়োজন মতো আরও অনেক মেথড যুক্ত করতে পারেন । এখন আমাদের তৈরি করা `stack` টেস্ট করে দেখবো যে সব কিছু ঠিকমতো কাজ করছে কি নাহ ।
 
-### - stack initialize -
+### - Create a Stack -
 
 ```
 const stack = new Stack();
 ```
 
-### add item to stack
+### - Add Item To Stack -
 
 ```
 stack.push('torikus');
@@ -193,7 +193,7 @@ stack.push('afifa');
 
 `stack` এ সবশেষে `afifa` কে সংযোজন করা হয়েছে এখন যদি বিয়োজন করি তাহলে -
 
-### - remove last item to stack -
+### - Remove Last Item To Stack -
 
 ```
 console.log(stack.pop()); // 'afifa'
@@ -203,7 +203,7 @@ console.log(stack.pop()); // 'afifa'
 
 যেহেতু `stack` এ সবশেষে `afifa` কে সংযোজন করা হয়েছে তাই pop() করার পর `afifa` কেই প্রথম বিয়োজন করে ফেলছে ।
 
-### - length in stack -
+### - Length In Stack -
 
 ```
 console.log(stack.size()); // 2
@@ -211,7 +211,7 @@ console.log(stack.size()); // 2
 
 যেহেতু, `stack` এ দুইটি আইটেম আছে তাই আউটপুট হিসেবে 2 কেই রিটার্ন করা হয়েছে।
 
-### - check if stack is empty -
+### - Check If Stack Is Empty -
 
 ```
 console.log(stack.isEmty());
