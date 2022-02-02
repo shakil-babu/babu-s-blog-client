@@ -1,13 +1,21 @@
+const findTheNumber = (nums, x) => {
+    let halfNumber = Math.floor(nums.length/2);
+    let array = [...nums.slice(halfNumber, nums.length - 1)];
+    for(let i = 0; i <= halfNumber; i++){
+        array.push(nums[i] + 5);
+    };
 
-const linearSearch = (arr,searchItem) => {
-    for(let i = 0; i<arr.length; i++){
-        if(arr[i] === searchItem){
-            return i;
+    // linear search apply
+    let isFound = false;
+    for(let j = 0; j<array.length; j++){
+        if(array[j] === x){
+            isFound = true;
         }
     }
-    return -1;
+
+    return (isFound ? "YES" : "NO");
 }
 
-let players = ["warner","rohit","mustafizur","sakib","bravo","taylor"];
-const res = linearSearch(players, 'shakil');
-console.log(res);
+let result = findTheNumber([1,2,3,4,5],7);
+console.log(result);
+// YES
